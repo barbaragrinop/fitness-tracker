@@ -1,0 +1,7 @@
+1 - Criar um arquivo para colocar os imports do angular material
+2 - Chamar esse arquivo no AppModule
+3 - Criar os componentes necessários.
+    > ng g c <NOMECOMPONENT> --module app.module 
+        [como terão 2 modulos, tá indicando que vai usar o app de referencia]
+4 - Criar seu arquivo de rotas dentro do App.
+    > app-routing.module

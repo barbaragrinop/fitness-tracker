@@ -1,0 +1,27 @@
+> INSTALAR O CLI
+
+	- npm install -g @angular/cli
+
+> INSTALAR O MATERIAL 
+
+	- npm install --save @angular/material @angular/cdk
+
+> ADICIONAR O BROWSER ANIMATIONS AO APP-MODULE
+
+> CRIAR UMA MÓDULO PARA OS COMPONTES DO MATERIAL
+	
+	- material.module.ts
+
+	> Adicionar esse módulo dentro do AppModule
+
+> DEFINIR UM TEMA EM styles.css
+
+	- @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+> INSTALLAR O HAMMERJS
+
+	- npm install --save hammerjs
+
+	> IMPORTAR NO main.ts
+
+		-
