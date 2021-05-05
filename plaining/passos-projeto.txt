@@ -5,3 +5,5 @@
         [como terão 2 modulos, tá indicando que vai usar o app de referencia]
 4 - Criar seu arquivo de rotas dentro do App.
     > app-routing.module
+
+5 - Criar seus htmls
