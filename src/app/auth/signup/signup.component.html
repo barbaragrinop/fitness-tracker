@@ -12,6 +12,8 @@
             <mat-error *ngIf="emailInput.hasError('required')">Não deve estar vazio </mat-error>
             <mat-error *ngIf="!emailInput.hasError('required')">E-mail inválido</mat-error>
         </mat-form-field>
+
+
         <mat-form-field>
             <input type="password" 
             matInput 
@@ -26,11 +28,19 @@
             <mat-error>No mínimo 6 carácteres.</mat-error>
             <!-- Essa parte faz a validação de no minino 6 caracteres -->
         </mat-form-field>
+
+
         <mat-form-field>
-            <input matInput placeholder="Data de Aniversário" [matDatepicker]="picker">
+            <input 
+            matInput 
+            placeholder="Data de Aniversário" 
+            [matDatepicker]="picker"
+            [max]="maxDate"> <!-- tá no ts -->
             <mat-datepicker-toggle matSuffix [for] = "picker"> </mat-datepicker-toggle>
             <mat-datepicker #picker></mat-datepicker>
         </mat-form-field>
+
+
         <button type="submit" mat-raised-button color="primary">Submit</button>
     </form>
 </section>
