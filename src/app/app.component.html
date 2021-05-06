@@ -4,16 +4,21 @@
     </mat-sidenav>
     <mat-sidenav-content>
         <mat-toolbar color="accent"> 
-            <div>
-                <button (click) = "sidenav.toggle()">TOGGLE</button>
+            <div fxHide.gt-xs>
+                <button mat-icon-button (click)="sidenav.toggle()">
+                    <mat-icon>menu</mat-icon>
+                </button>
             </div>
             <div>
-                LOGO
+                <a routerLink="/">LOGO</a>
             </div>
-            <div>
-                <a routerLink="/signup">CADASTRAR</a>
-                <a routerLink="/login">LOGIN</a>
-                <a routerLink="/training">TREINAMENTO</a>
+ 
+            <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs >
+                <ul fxLayout fxLayoutGap="10px" class="navigation-items">
+                    <li><a routerLink="/signup">CADASTRAR</a></li>
+                    <li><a routerLink="/login">LOGIN</a></li>
+                    <li><a routerLink="/training">TREINAMENTO</a></li>
+                </ul>
             </div>
         </mat-toolbar>
         <main>
