@@ -3,7 +3,24 @@
         <p>I am the sidenac</p>
     </mat-sidenav>
     <mat-sidenav-content>
-        <!-- <button (click) = "sidenav.toggle()">Mostrar Sidenav</button>   O toggle é para fazer abrir ou fechar -->
-        <router-outlet></router-outlet> <!-- diz ao angular onde encaminhar -->
+        <mat-toolbar color="accent"> 
+            <div>
+                <button (click) = "sidenav.toggle()">TOGGLE</button>
+            </div>
+            <div>
+                LOGO
+            </div>
+            <div>
+                <a routerLink="/signup">CADASTRAR</a>
+                <a routerLink="/login">LOGIN</a>
+                <a routerLink="/training">TREINAMENTO</a>
+            </div>
+        </mat-toolbar>
+        <main>
+            <router-outlet></router-outlet> <!-- diz ao angular onde encaminhar -->
+        </main>
     </mat-sidenav-content>
 </mat-sidenav-container>
+
+
+<!-- <button (click) = "sidenav.toggle()">Mostrar Sidenav</button>   O toggle é para fazer abrir ou fechar -->
