@@ -1,2 +1,9 @@
-<!-- diz ao angular onde encaminhar -->
-<router-outlet></router-outlet> 
+<mat-sidenav-container>
+    <mat-sidenav #sidenav role="navigation">
+        <p>I am the sidenac</p>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <!-- <button (click) = "sidenav.toggle()">Mostrar Sidenav</button>   O toggle é para fazer abrir ou fechar -->
+        <router-outlet></router-outlet> <!-- diz ao angular onde encaminhar -->
+    </mat-sidenav-content>
+</mat-sidenav-container>
