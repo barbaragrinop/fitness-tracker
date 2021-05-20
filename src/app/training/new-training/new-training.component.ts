@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { Exercise } from '../exercise.model';
 import { TrainingService } from '../training.service';
 
@@ -17,8 +18,8 @@ export class NewTrainingComponent implements OnInit {
     this.exercises = this.training.getAvailableExercises();
   }
 
-  onStartTraining(){
-    this.trainingStart.emit();
+  onStartTraining(form: NgForm){
+    this.training.startExercise(form.value.exercise);
   }
 
 }
