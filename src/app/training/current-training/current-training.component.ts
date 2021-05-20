@@ -24,7 +24,7 @@ export class CurrentTrainingComponent implements OnInit {
     this.timer = setInterval(()=>{
       this.progress = this.progress + 1;
       if(this.progress >= 100){
-        clearInterval(this.timer);
+        this.trainingService.completeExercise();
       }
     }, step);
   }
@@ -38,7 +38,7 @@ export class CurrentTrainingComponent implements OnInit {
     });
     dialogRef.afterClosed().subscribe(result=> {
       if(result){
-        this.trainingExit.emit();
+        this.trainingService.cancelExercise(this.progress);
       } else{
        this.startOrResumeTimer();
       }
