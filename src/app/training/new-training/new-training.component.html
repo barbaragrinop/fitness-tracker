@@ -5,10 +5,10 @@
             <mat-form-field appearance="fill" fxLayoutAlign="center">
                 <mat-label>Exercícios</mat-label>
                 <mat-select placeholer="Exercícios">
-                  <mat-option value="crunches"> Abdominais </mat-option>
-                  <mat-option value="touch-toes"> Tocar nos pés </mat-option>
+                  <mat-option *ngFor="let exercise of exercises" value="{{exercise.id}}"> {{exercise.name}} </mat-option>
+                  <!-- <mat-option value="touch-toes"> Tocar nos pés </mat-option>
                   <mat-option value="side-lunges"> Lunges  </mat-option>
-                  <mat-option value="side-lunges"> Flexão  </mat-option>
+                  <mat-option value="burpess"> Flexão  </mat-option> -->
                 </mat-select>
               </mat-form-field>
         </mat-card-content>
