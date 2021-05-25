@@ -7,3 +7,8 @@
     > app-routing.module
 
 5 - Criar seus htmls
+
+-----
+
+instalar firebase
+- npm install firebase angularfire2 --save
