@@ -12,3 +12,7 @@
 
 instalar firebase
 - npm install firebase angularfire2 --save
+
+-- se der erro no namespace...
+- npm i firebase@7.24.0 angularfire2 --save
+
